@@ -19,7 +19,7 @@
     <asset src="www/ZoomControl.js" target="js/plugins/ZoomControl.js" />
 
     <platform name="android">
-        <config-file target="res/xml/config.xml" parent="/*">
+        <config-file target="config.xml" parent="/*">
                 <feature name="ZoomControl">
                         <param name="android-package" value="com.kumbe.phonegap.zoom.zoomcontrol" />
                 </feature>
