@@ -3,7 +3,7 @@
     xmlns="http://www.phonegap.com/ns/plugins/1.0"
     xmlns:android="http://schemas.android.com/apk/res/android"
     id="com.kumbe.phonegap.zoom.zoomcontrol"
-    version="0.1.2">
+    version="0.1.3">
 
     <name>ZoomControl</name>
     <description>ZoomControl - allow the use of the native zoom/pan features</description>
@@ -15,8 +15,10 @@
     <engines>
         <engine name="cordova" version=">=3.1.0" />
     </engines>
-
-    <asset src="www/ZoomControl.js" target="js/plugins/ZoomControl.js" />
+    
+    <js-module src="www/plugins.ZoomControl.js" name="ZoomControl">
+        <clobbers target="cordova.plugins.ZoomControl" />
+    </js-module>
 
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
