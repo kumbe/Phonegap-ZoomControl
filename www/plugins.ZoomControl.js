@@ -1,3 +1,4 @@
+// creating plugin
 var exec = require("cordova/exec");
 
 function ZoomControl() {};
