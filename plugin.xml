@@ -26,6 +26,8 @@
                         <param name="android-package" value="com.kumbe.phonegap.zoom.ZoomControl" />
                 </feature>
         </config-file>
+	<config-file parent="/*" target="AndroidManifest.xml"/>
+	<source-file src="src/android/com/kumbe/phonegap/zoom/ZoomControl.java" target-dir="src/com/kumbe/phonegap/zoom/ZoomControl"/>
     </platform>
 
 </plugin>
