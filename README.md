@@ -27,6 +27,7 @@ Usage example
    function OnLoad(){
   	 document.addEventListener('deviceready', function(){
   		 cordova.plugins.ZoomControl.ZoomControl("true");
+  		 cordova.plugins.ZoomControl.setBuiltInZoomControls("true");
   	 }, function(){
   		 alert('error deviceready');
   	 });
