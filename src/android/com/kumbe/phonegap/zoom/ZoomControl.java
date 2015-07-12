@@ -19,7 +19,7 @@ public class ZoomControl extends CordovaPlugin {
 		
         if ("ZoomControl".equals(action)) {
         	        	
-        	final WebView webView = this.webView;
+        	final WebView webView = (WebView)this.webView.getEngine().getView();
         	
             cordova.getActivity().runOnUiThread(new Runnable() {
 
@@ -48,7 +48,7 @@ public class ZoomControl extends CordovaPlugin {
         }
 
         if ("setBuiltInZoomControls".equals(action)) {
-            final WebView webView = this.webView;
+            final WebView webView = (WebView)this.webView.getEngine().getView();
             cordova.getActivity().runOnUiThread(new Runnable() {
                 public void run() {
                     try {
@@ -66,7 +66,7 @@ public class ZoomControl extends CordovaPlugin {
         }
 
         if ("setDisplayZoomControls".equals(action)) {
-            final WebView webView = this.webView;
+            final WebView webView = (WebView)this.webView.getEngine().getView();
             cordova.getActivity().runOnUiThread(new Runnable() {
                 public void run() {
                     try {
