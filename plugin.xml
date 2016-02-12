@@ -3,7 +3,7 @@
     xmlns="http://www.phonegap.com/ns/plugins/1.0"
     xmlns:android="http://schemas.android.com/apk/res/android"
     id="com.kumbe.phonegap.zoom.zoomcontrol"
-    version="0.1.7">
+    version="0.1.8">
 
     <name>ZoomControl</name>
     <description>ZoomControl - allow the use of the native zoom/pan features</description>
